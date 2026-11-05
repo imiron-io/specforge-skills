@@ -1,0 +1,20 @@
+{
+  "name": "specforge-skills",
+  "interface": {
+    "displayName": "SpecForge Skills"
+  },
+  "plugins": [
+    {
+      "name": "specforge",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

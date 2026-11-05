@@ -17,10 +17,10 @@ See the [SpecForge documentation](https://docs.imiron.io/v/latest/en/setting-up.
 
 ## Installation
 
-In Claude Code, add this repository as a marketplace and install the plugin:
+In your agent (e.g., Claude, Codex, GitHub Copilot), add this repository as a marketplace and install the plugin:
 
 ```
-/plugin marketplace add imiron/specforge-skills
+/plugin marketplace add imiron-io/specforge-skills
 /plugin install specforge@specforge-skills
 ```
 
