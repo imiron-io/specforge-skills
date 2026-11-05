@@ -1,0 +1,29 @@
+{
+  "name": "specforge-skills",
+  "owner": {
+    "name": "Imiron",
+    "email": "specforge@imiron.io"
+  },
+  "metadata": {
+    "description": "Agentic Skills for working with SpecForge and the Lilo specification language."
+  },
+  "plugins": [
+    {
+      "name": "specforge",
+      "source": "./",
+      "description": "Skills for authoring, checking, and autoformalizing temporal specifications in Lilo using the SpecForge CLI.",
+      "version": "0.1.0",
+      "category": "development",
+      "keywords": [
+        "specforge",
+        "lilo",
+        "requirements",
+        "monitoring",
+        "specifications",
+        "temporal-logic",
+        "formal-methods"
+      ],
+      "strict": true
+    }
+  ]
+}
