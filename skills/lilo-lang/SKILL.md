@@ -20,7 +20,10 @@ specforge doc --all            # everything, concatenated
 Authoring topics: `lilo-language` (types, expressions, temporal operators), `lilo-systems`
 (signals/params), `lilo-modules`, `lilo-components`, `lilo-additional-features`,
 `conventions`, `semantics`. There is **no `lang-ref` topic** — the reference is split across
-these. **Read `specforge doc lilo-language` before writing anything non-trivial.**
+these. The cheat-sheet below covers common authoring; write from it first and let
+`specforge check` find mistakes. Pull one doc page only when `check` fails in a way
+the repair list does not explain, or when you need a feature the cheat-sheet does not
+show (records, enums, components, units). Never run `specforge doc --all`.
 
 ## Cheat-sheet (orientation only — pull the docs for exact syntax & semantics)
 
@@ -76,8 +79,8 @@ spec atDepot = always (34.63<deg> < gps.lat < 34.65<deg> && 135.99<deg> < gps.lo
 - **Parse error** — check backticks around spaced names, operator spelling (`=>` not `->`),
   and that each `spec`/`def` has a single `= <expr>` body.
 
-When unsure of an operator's exact semantics, run `specforge doc semantics` rather than
-guessing — bounds are inclusive/exclusive in specific ways documented there.
+When unsure of an operator's exact semantics, read only that operator's entry
+(`specforge doc semantics | grep -A3 -i "<operator>"`) rather than the whole page.
 
 ## Beyond `check`
 
