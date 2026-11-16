@@ -14,8 +14,10 @@ rather than guessing syntax.
 ```bash
 specforge doc                  # list all pages with one-line summaries
 specforge doc <topic>          # print one page
-specforge doc --all            # everything, concatenated
 ```
+
+Direct the output of `specforge doc ...` to temporary files or grep to prevent polluting the 
+context window.
 
 Authoring topics: `lilo-language` (types, expressions, temporal operators), `lilo-systems`
 (signals/params), `lilo-modules`, `lilo-components`, `lilo-additional-features`,
@@ -77,7 +79,8 @@ spec atDepot = always (34.63<deg> < gps.lat < 34.65<deg> && 135.99<deg> < gps.lo
   and that each `spec`/`def` has a single `= <expr>` body.
 
 When unsure of an operator's exact semantics, run `specforge doc semantics` rather than
-guessing — bounds are inclusive/exclusive in specific ways documented there.
+guessing — bounds are inclusive/exclusive in specific ways documented. Read a specific operator's 
+entry (`specforge doc semantics | grep -A3 -i "<operator>"`).
 
 ## Beyond `check`
 

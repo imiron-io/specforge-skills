@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "specforge",
+  "version": "0.1.0",
+  "description": "Skills for authoring, checking, and autoformalizing temporal specifications in Lilo using the SpecForge CLI.",
+  "author": {
+    "name": "Imiron",
+    "email": "specforge@imiron.io"
+  },
+  "keywords": [
+    "specforge",
+    "lilo",
+    "requirements",
+    "monitoring",
+    "specifications",
+    "temporal-logic",
+    "formal-methods"
+  ]
+}
